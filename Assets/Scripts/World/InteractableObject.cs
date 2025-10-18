@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using DefaultNamespace;
 using FishNet.Object;
+using FishNet.Object.Synchronizing;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.InputSystem;
 
 namespace Scripts
 {
@@ -22,7 +22,6 @@ namespace Scripts
             }
         }
 
-        public static int _interactIndex = 0;
 
         private Vector2 _velocity;
 
@@ -30,21 +29,33 @@ namespace Scripts
         public event Action OnStateChanged;
 
 
-        public List<InteractableObject> Triggers;
-
         private int _lastProcessedEvent = 0;
 
 
         public void OnLocalPlayerInteract()
         {
+            Debug.Log("SENDING RPC");
             RpcInteract();
         }
 
-        [ObserversRpc]
+
+        [ServerRpc(RequireOwnership = false)]
         public void RpcInteract()
         {
             Debug.Log("RPC INTERACTED");
-            Interact(++_interactIndex);
+            RpcObInteract();
+        }
+
+        [ObserversRpc]
+        public void RpcObInteract()
+        {
+            Interact();
+        }
+
+
+        public void SetOn(bool b)
+        {
+            On = (b);
         }
 
 
@@ -52,21 +63,9 @@ namespace Scripts
         /// If source = null then its the player
         /// </summary>
         /// <param name="source"></param>
-        public void Interact(int eventIndex)
+        public void Interact()
         {
-            // Prevents trigger recursion
-            if (eventIndex <= _lastProcessedEvent)
-            {
-                return;
-            }
-
-            _lastProcessedEvent = eventIndex;
-
             OnInteracted?.Invoke();
-            foreach (var trigger in Triggers)
-            {
-                trigger.Interact(eventIndex);
-            }
         }
     }
 }

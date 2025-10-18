@@ -6,47 +6,30 @@ using UnityEngine;
 
 namespace Scripts
 {
-    public class PressurePlate : NetworkBehaviour
+    public class PressurePlate : InteractableObject
     {
-        private InteractableObject _interactable;
         [SerializeField] private SpriteRenderer _spriteRenderer;
 
         public Sprite ActiveSprite;
         public Sprite DeactivatedSprite;
 
 
-        protected override void OnValidate()
-        {
-            if (!_spriteRenderer) return;
-            UpdateState();
-        }
-
-        private Sprite GetCurrentSprite()
-        {
-            return _interactable.On ? ActiveSprite : DeactivatedSprite;
-        }
-
         private void Start()
         {
-            _interactable = GetComponent<InteractableObject>();
-            _interactable.OnInteracted += OnInteracted;
-            _spriteRenderer.sprite = GetCurrentSprite();
+            UpdateState();
         }
 
         private void UpdateState()
         {
-            _spriteRenderer.sprite = _interactable.On ? ActiveSprite : DeactivatedSprite;
+            _spriteRenderer.sprite = On ? ActiveSprite : DeactivatedSprite;
         }
 
-        public void OnInteracted()
-        {
-        }
 
         private void OnTriggerEnter2D(Collider2D other)
         {
             if (other.TryGetComponent<PlayerControls>(out _))
             {
-                _interactable.On = true;
+                SetOn(true);
                 UpdateState();
             }
         }
@@ -55,7 +38,7 @@ namespace Scripts
         {
             if (other.TryGetComponent<PlayerControls>(out _))
             {
-                _interactable.On = false;
+                SetOn(false);
                 UpdateState();
             }
         }

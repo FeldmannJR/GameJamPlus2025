@@ -1,15 +1,15 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using FishNet.Object;
 using UnityEngine;
 using UnityEngine.Events;
 
 namespace Scripts
 {
-    public class ActivateOnInteractable : MonoBehaviour
+    public class ActivateOnInteractable : InteractableObject
     {
         public List<InteractableObject> Required;
         public bool Invert;
-        public GameObject Target;
         public bool ToggleOnce; // Unable to turn off if the conditions are not met
         private bool _toggledOn = false;
 

@@ -14,15 +14,15 @@ namespace Scripts
         [SerializeField] private GameObject _colliderObject;
         public bool Open = false;
 
+
+        [SerializeField] private bool _stayOpen = false;
         public Sprite OpenSprite;
         public Sprite ClosedSprite;
 
-        protected override void OnValidate()
-        {
-            if (!_spriteRenderer) return;
-            SetOpen(Open);
-        }
 
+        private void Start()
+        {
+        }
 
         public void SetOpen(bool open)
         {
@@ -32,25 +32,21 @@ namespace Scripts
         }
 
 
-        private void Start()
+        private void OnEnable()
         {
             foreach (var interactableObject in RequiredToOpen)
             {
                 interactableObject.OnStateChanged += UpdateState;
             }
+
+            SetOpen(false);
         }
 
         public void UpdateState()
         {
             var open = RequiredToOpen.All(req => req.On);
+            if (!open && _stayOpen) return;
             SetOpen(open);
-        }
-
-
-        public void OnInteracted()
-        {
-            Debug.Log("INTERACTED");
-            SetOpen(!Open);
         }
     }
 }

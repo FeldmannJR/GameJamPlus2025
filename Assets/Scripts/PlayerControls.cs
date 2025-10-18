@@ -28,17 +28,23 @@ namespace DefaultNamespace
         {
             if (!IsOwner) return;
             OnStartedOwner?.Invoke(this);
-            /*_inputActions = new GeneratedInputActions();
-            if (ClonesManager.IsClone())
-            {
-                _inputActions = new GeneratedInputActions();
-
-            }
-            _inputActions.Enable();
-            _inputActions.Player.Interact.performed += OnInteract;
-            _inputActions.Player.Move.performed += OnMove;
-            _inputActions.Player.Move.canceled += OnMove;*/
+            var input = new InputActionsGenerated();
+            input.Player.Enable();
+            input.Player.Interact.performed += OnInteract;
+            input.Player.Move.performed += OnMove;
+            input.Player.Move.canceled += OnMove;
         }
+
+        private void RegisterKeyboard()
+        {
+            var input = new InputActionsGenerated();
+            input.Player.Enable();
+            input.Player.Interact.performed += OnInteract;
+            input.Player.Move.performed += OnMove;
+            input.Player.Move.canceled += OnMove;
+        }
+
+      
 
         private void OnMove(InputAction.CallbackContext ev)
         {
@@ -56,33 +62,41 @@ namespace DefaultNamespace
 
         private void OnInteract(InputAction.CallbackContext ev)
         {
-            Debug.Log("On interact");
-            var filter = new ContactFilter2D();
-            filter.SetLayerMask(PhysicsLayers.Mask_Interactable);
-            filter.useTriggers = true;
-
-            var colliders = new List<Collider2D>();
-            Physics2D.OverlapCollider(_interactCollider, filter, colliders);
-
-
-            var closest = float.MaxValue;
-            InteractableObject found = null;
-            foreach (var col in colliders)
+            try
             {
-                if (col.TryGetComponent<InteractableObject>(out var obj))
+
+                Debug.Log("On interact");
+                var filter = new ContactFilter2D();
+                filter.SetLayerMask(PhysicsLayers.Mask_Interactable);
+                filter.useTriggers = true;
+
+                var colliders = new List<Collider2D>();
+                Physics2D.OverlapCollider(_interactCollider, filter, colliders);
+
+
+                var closest = float.MaxValue;
+                InteractableObject found = null;
+                foreach (var col in colliders)
                 {
-                    var distance = Vector2.Distance(col.bounds.center, transform.position);
-                    if (distance < closest)
+                    if (col.TryGetComponent<InteractableObject>(out var obj))
                     {
-                        found = obj;
-                        closest = distance;
+                        var distance = Vector2.Distance(col.bounds.center, transform.position);
+                        if (distance < closest)
+                        {
+                            found = obj;
+                            closest = distance;
+                        }
                     }
                 }
-            }
 
-            if (found != null && _interactCooldown.CheckTrigger())
+                if (found != null && _interactCooldown.CheckTrigger())
+                {
+                    found.OnLocalPlayerInteract();
+                }
+            }
+            catch (Exception ex)
             {
-                found.OnLocalPlayerInteract();
+                Debug.LogError(ex);
             }
         }
     }

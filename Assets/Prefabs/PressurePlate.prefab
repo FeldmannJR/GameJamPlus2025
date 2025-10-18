@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8711596427824516794}
-  - component: {fileID: 8452582562910434307}
   - component: {fileID: 7880334002641620101}
   - component: {fileID: 3656411402493792569}
   - component: {fileID: 2962535051568029826}
@@ -36,23 +35,6 @@ Transform:
   - {fileID: 3979107402802738850}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8452582562910434307
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3041890699624981038}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7da773df0ac346eaa3cd559ef9aec2b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Scripts::Scripts.InteractableObject
-  _componentIndexCache: 0
-  _addedNetworkObject: {fileID: 7880334002641620101}
-  _networkObjectCache: {fileID: 7880334002641620101}
-  _on: 0
-  Triggers: []
 --- !u!114 &7880334002641620101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72,7 +54,7 @@ MonoBehaviour:
   <PredictedSpawn>k__BackingField: {fileID: 0}
   <PredictedOwner>k__BackingField: {fileID: 0}
   NetworkBehaviours:
-  - {fileID: 8452582562910434307}
+  - {fileID: 0}
   - {fileID: 0}
   InitializedParentNetworkBehaviour: {fileID: 0}
   InitializedNestedNetworkObjects: []
@@ -122,6 +104,7 @@ MonoBehaviour:
   _componentIndexCache: 255
   _addedNetworkObject: {fileID: 7880334002641620101}
   _networkObjectCache: {fileID: 0}
+  _on: 0
   _spriteRenderer: {fileID: 1544309191464991726}
   ActiveSprite: {fileID: -2280537862946826220, guid: 99dde2d24e5e7844c8b4addfcefb7423, type: 3}
   DeactivatedSprite: {fileID: 2418575440564696342, guid: b211a34296caf72439891e8495c6960c, type: 3}

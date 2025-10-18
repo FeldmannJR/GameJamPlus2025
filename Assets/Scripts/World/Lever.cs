@@ -5,40 +5,37 @@ using UnityEngine;
 
 namespace Scripts
 {
-    [RequireComponent(typeof(InteractableObject))]
-    public class Lever : NetworkBehaviour
+    public class Lever : InteractableObject
     {
-        private InteractableObject _interactable;
         [SerializeField] private SpriteRenderer _spriteRenderer;
 
         public Sprite ActiveSprite;
         public Sprite DeactivatedSprite;
 
 
-        protected override void OnValidate()
-        {
-            if (!_spriteRenderer) return;
-            _spriteRenderer.sprite = GetCurrentSprite();
-        }
-
         private Sprite GetCurrentSprite()
         {
-            return _interactable.On ? ActiveSprite : DeactivatedSprite;
+            return On ? ActiveSprite : DeactivatedSprite;
         }
 
-        private void Start()
+        public override void OnStartClient()
+
         {
-            _interactable = GetComponent<InteractableObject>();
-            _interactable.OnInteracted += OnInteracted;
+            this.OnInteracted += OnInteracted_O;
+            _spriteRenderer.sprite = GetCurrentSprite();
+        }
+
+        private void UpdateState()
+        {
             _spriteRenderer.sprite = GetCurrentSprite();
         }
 
 
-        public void OnInteracted()
+        public void OnInteracted_O()
         {
             Debug.Log("INTERACTED");
-            _interactable.On = !_interactable.On;
-            _spriteRenderer.sprite = GetCurrentSprite();
+            SetOn(!On);
+            UpdateState();
         }
     }
 }

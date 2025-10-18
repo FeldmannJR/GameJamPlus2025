@@ -54,8 +54,7 @@ MonoBehaviour:
   <PredictedSpawn>k__BackingField: {fileID: 0}
   <PredictedOwner>k__BackingField: {fileID: 0}
   NetworkBehaviours:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 5360407771529078716}
   InitializedParentNetworkBehaviour: {fileID: 0}
   InitializedNestedNetworkObjects: []
   RuntimeParentNetworkBehaviour: {fileID: 0}
@@ -80,13 +79,13 @@ MonoBehaviour:
   _spectatorInterpolation: 2
   _enableTeleport: 0
   _teleportThreshold: 1
-  <PrefabId>k__BackingField: 0
+  <PrefabId>k__BackingField: 2
   <SpawnableCollectionId>k__BackingField: 0
   <AssetPathHash>k__BackingField: 12335592710753879261
   <SceneId>k__BackingField: 0
   SerializedTransformProperties:
-    Position: {x: 0, y: 0, z: 0}
-    Rotation: {x: 0, y: 0, z: 0, w: 1}
+    Position: {x: -4.98452, y: 1.64169, z: 0}
+    Rotation: {x: -0, y: -0, z: -0, w: 1}
     Scale: {x: 1, y: 1, z: 1}
     IsValid: 1
 --- !u!114 &5360407771529078716
@@ -101,9 +100,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9744bed1e3f74d9d995ebc0554e9812a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Scripts::Scripts.Door
-  _componentIndexCache: 255
+  _componentIndexCache: 0
   _addedNetworkObject: {fileID: 7880334002641620101}
-  _networkObjectCache: {fileID: 0}
+  _networkObjectCache: {fileID: 7880334002641620101}
   RequiredToOpen: []
   _spriteRenderer: {fileID: 1544309191464991726}
   _colliderObject: {fileID: 7501046124399261135}
