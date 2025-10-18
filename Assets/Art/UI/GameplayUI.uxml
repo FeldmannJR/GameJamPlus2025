@@ -1,0 +1,14 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Art/UI/GameplayUI.uss?fileID=7433441132597879392&amp;guid=6f7cc65f6e906a54db405f42d1eee8c7&amp;type=3#GameplayUI" />
+    <ui:VisualElement name="root" style="flex-grow: 1;">
+        <ui:VisualElement name="Container" style="flex-grow: 0; flex-direction: column; bottom: 0; position: absolute; background-color: rgba(0, 0, 0, 0.41);">
+            <ui:VisualElement name="MessagesContainer" style="flex-grow: 1;">
+                <ui:Label text="THIS IS A LONG MESSAGE" name="Message" class="message" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Action" style="flex-grow: 1; flex-direction: row;">
+                <ui:TextField placeholder-text="Message" name="Text" style="width: 505px; height: 69px; position: relative; top: auto; left: auto; bottom: auto;" />
+                <ui:Button text="SEND" name="Button" style="position: relative; top: auto; left: auto; height: auto; background-color: rgb(141, 243, 176);" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
