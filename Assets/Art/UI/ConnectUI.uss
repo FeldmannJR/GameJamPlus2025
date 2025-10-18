@@ -1,0 +1,8 @@
+:root {
+}
+
+.connect-button {
+    width: 335px;
+    height: 91px;
+    font-size: 37px;
+}

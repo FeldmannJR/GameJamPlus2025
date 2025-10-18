@@ -25,6 +25,7 @@ namespace DefaultNamespace
 
         public void Finish(PlayerControls player)
         {
+            if (player.Finished) return;
             player.Finished = true;
             _won++;
             OnPlayerFinish?.Invoke(player);

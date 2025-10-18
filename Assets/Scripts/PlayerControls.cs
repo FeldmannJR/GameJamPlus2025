@@ -29,18 +29,8 @@ namespace DefaultNamespace
             OnStarted?.Invoke(this);
             if (!IsOwner) return;
 
-            #if UNITY_EDITOR
-            if (ParrelSync.ClonesManager.IsClone())
-            {
-                RegisterGamePad();
-            }
-            else
-            {
-                RegisterKeyboard();
-            }
-            #else
-                RegisterGamePad();
-            #endif
+            RegisterGamePad();
+
         }
 
         private void RegisterKeyboard()

@@ -9,14 +9,13 @@ namespace UI
         public override void OnOpen(VisualElement root)
         {
             _label = root.Q<Label>("Label");
-            base.OnOpen(root);
         }
 
 
         public void Show(string message)
         {
             gameObject.SetActive(true);// todo: ui service
-            _label.text = message;
+            //_label.text = message;
         }
     }
 }

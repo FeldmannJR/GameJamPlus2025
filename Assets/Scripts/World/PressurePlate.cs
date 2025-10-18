@@ -19,12 +19,14 @@ namespace Scripts
 
         private void UpdateState()
         {
+            if (!this.gameObject.activeSelf) return;
             _spriteRenderer.sprite = On ? ActiveSprite : DeactivatedSprite;
         }
 
 
         private void OnTriggerEnter2D(Collider2D other)
         {
+            if (!this.gameObject.activeSelf) return;
             if (other.TryGetComponent<PlayerControls>(out _))
             {
                 SetOn(true);
@@ -34,6 +36,7 @@ namespace Scripts
 
         private void OnTriggerExit2D(Collider2D other)
         {
+            if (!this.gameObject.activeSelf) return;
             if (other.TryGetComponent<PlayerControls>(out _))
             {
                 SetOn(false);

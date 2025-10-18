@@ -1,14 +1,19 @@
-﻿using FishNet.Managing;
+﻿using FishNet.Discovery;
+using FishNet.Managing;
 using FishNet.Transporting;
+using TMPro;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 namespace FishNet.Example
 {
     public class NetworkHudCanvases : MonoBehaviour
     {
+
+        [SerializeField]
+        public NetworkDiscovery NetworkDiscovery;
         #region Types.
+
         /// <summary>
         /// Ways the HUD will automatically start a connection.
         /// </summary>
@@ -19,33 +24,35 @@ namespace FishNet.Example
             Server,
             Client
         }
+
         #endregion
 
         #region Serialized.
+
         /// <summary>
         /// What connections to automatically start on play.
         /// </summary>
-        [Tooltip("What connections to automatically start on play.")]
-        [SerializeField]
+        [Tooltip("What connections to automatically start on play.")] [SerializeField]
         private AutoStartType _autoStartType = AutoStartType.Disabled;
+
         /// <summary>
         /// Color when socket is stopped.
         /// </summary>
-        [Tooltip("Color when socket is stopped.")]
-        [SerializeField]
+        [Tooltip("Color when socket is stopped.")] [SerializeField]
         private Color _stoppedColor;
+
         /// <summary>
         /// Color when socket is changing.
         /// </summary>
-        [Tooltip("Color when socket is changing.")]
-        [SerializeField]
+        [Tooltip("Color when socket is changing.")] [SerializeField]
         private Color _changingColor;
+
         /// <summary>
         /// Color when socket is started.
         /// </summary>
-        [Tooltip("Color when socket is started.")]
-        [SerializeField]
+        [Tooltip("Color when socket is started.")] [SerializeField]
         private Color _startedColor;
+
         [Header("Indicators")]
         /// <summary>
         /// Indicator for server state.
@@ -53,23 +60,30 @@ namespace FishNet.Example
         [Tooltip("Indicator for server state.")]
         [SerializeField]
         private Image _serverIndicator;
+
         /// <summary>
         /// Indicator for client state.
         /// </summary>
-        [Tooltip("Indicator for client state.")]
-        [SerializeField]
+        [Tooltip("Indicator for client state.")] [SerializeField]
         private Image _clientIndicator;
+
+
+        [SerializeField] private TMP_InputField _ip;
+
         #endregion
 
         #region Private.
+
         /// <summary>
         /// Found NetworkManager.
         /// </summary>
         private NetworkManager _networkManager;
+
         /// <summary>
         /// Current state of client socket.
         /// </summary>
         private LocalConnectionState _clientState = LocalConnectionState.Stopped;
+
         /// <summary>
         /// Current state of server socket.
         /// </summary>
@@ -80,6 +94,7 @@ namespace FishNet.Example
         /// </summary>
         private EventSystem _eventSystem;
 #endif
+
         #endregion
 
         private void OnGUI()
@@ -101,7 +116,8 @@ namespace FishNet.Example
 
             GUILayout.BeginArea(new Rect(4, 110, 256, 9000));
             Vector2 defaultResolution = new Vector2(1920f, 1080f);
-            GUI.matrix = Matrix4x4.TRS(Vector3.zero, Quaternion.identity, new Vector3(Screen.width / defaultResolution.x, Screen.height / defaultResolution.y, 1));
+            GUI.matrix = Matrix4x4.TRS(Vector3.zero, Quaternion.identity,
+                new Vector3(Screen.width / defaultResolution.x, Screen.height / defaultResolution.y, 1));
 
             GUIStyle style = GUI.skin.GetStyle("button");
             int originalFontSize = style.fontSize;
@@ -111,13 +127,15 @@ namespace FishNet.Example
             // Server button.
             if (Application.platform != RuntimePlatform.WebGLPlayer)
             {
-                if (GUILayout.Button($"{GetNextStateText(_serverState)} Server", GUILayout.Width(buttonSize.x), GUILayout.Height(buttonSize.y)))
+                if (GUILayout.Button($"{GetNextStateText(_serverState)} Server", GUILayout.Width(buttonSize.x),
+                        GUILayout.Height(buttonSize.y)))
                     OnClick_Server();
                 GUILayout.Space(10f);
             }
 
             // Client button.
-            if (GUILayout.Button($"{GetNextStateText(_clientState)} Client", GUILayout.Width(buttonSize.x), GUILayout.Height(buttonSize.y)))
+            if (GUILayout.Button($"{GetNextStateText(_clientState)} Client", GUILayout.Width(buttonSize.x),
+                    GUILayout.Height(buttonSize.y)))
                 OnClick_Client();
 
             style.fontSize = originalFontSize;
@@ -154,7 +172,8 @@ namespace FishNet.Example
 
             if (_autoStartType == AutoStartType.Host || _autoStartType == AutoStartType.Server)
                 OnClick_Server();
-            if (!Application.isBatchMode && (_autoStartType == AutoStartType.Host || _autoStartType == AutoStartType.Client))
+            if (!Application.isBatchMode &&
+                (_autoStartType == AutoStartType.Host || _autoStartType == AutoStartType.Client))
                 OnClick_Client();
         }
 
@@ -207,6 +226,7 @@ namespace FishNet.Example
             else
                 _networkManager.ServerManager.StartConnection();
 
+            NetworkDiscovery.AdvertiseServer();
             DeselectButtons();
         }
 
@@ -218,7 +238,16 @@ namespace FishNet.Example
             if (_clientState != LocalConnectionState.Stopped)
                 _networkManager.ClientManager.StopConnection();
             else
-                _networkManager.ClientManager.StartConnection();
+            {
+                if (string.IsNullOrEmpty(_ip.text))
+                {
+                    _networkManager.ClientManager.StartConnection();
+                }
+                else
+                {
+                    _networkManager.ClientManager.StartConnection(_ip.text);
+                }
+            }
 
             DeselectButtons();
         }

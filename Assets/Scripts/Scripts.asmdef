@@ -1,19 +1,26 @@
 {
-    "name": "Scripts",
-    "rootNamespace": "",
-    "references": [
-        "FishNet.Runtime",
-        "Unity.InputSystem",
-        "ParrelSync",
-        "UniTask"
-    ],
-    "includePlatforms": [],
-    "excludePlatforms": [],
-    "allowUnsafeCode": false,
-    "overrideReferences": false,
-    "precompiledReferences": [],
-    "autoReferenced": true,
-    "defineConstraints": [],
-    "versionDefines": [],
-    "noEngineReferences": false
+  "name": "Scripts",
+  "rootNamespace": "",
+  "references": [
+    "FishNet.Runtime",
+    "Unity.InputSystem",
+    "ParrelSync",
+    "UniTask",
+    "Unity.TextMeshPro",
+    "TMPro",
+    "Unity.Services.Multiplayer",
+    "Unity.Services.Core",
+    "Unity.Services.Authentication",
+    "FishyUnityTransport",
+    "Unity.Networking.Transport"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
 }
