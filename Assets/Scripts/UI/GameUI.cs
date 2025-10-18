@@ -6,6 +6,7 @@ namespace UI
     [RequireComponent(typeof(UIDocument))]
     public class GameUI : MonoBehaviour
     {
+        
         public virtual void OnOpen(VisualElement root)
         {
         }

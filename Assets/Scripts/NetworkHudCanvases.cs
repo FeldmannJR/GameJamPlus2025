@@ -1,5 +1,4 @@
-﻿using FishNet.Discovery;
-using FishNet.Managing;
+﻿using FishNet.Managing;
 using FishNet.Transporting;
 using TMPro;
 using UnityEngine;
@@ -9,9 +8,6 @@ namespace FishNet.Example
 {
     public class NetworkHudCanvases : MonoBehaviour
     {
-
-        [SerializeField]
-        public NetworkDiscovery NetworkDiscovery;
         #region Types.
 
         /// <summary>
@@ -226,7 +222,6 @@ namespace FishNet.Example
             else
                 _networkManager.ServerManager.StartConnection();
 
-            NetworkDiscovery.AdvertiseServer();
             DeselectButtons();
         }
 

@@ -15,7 +15,6 @@ namespace UI
         public void Show(string message)
         {
             gameObject.SetActive(true);// todo: ui service
-            //_label.text = message;
         }
     }
 }

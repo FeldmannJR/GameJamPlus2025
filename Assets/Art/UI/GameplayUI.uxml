@@ -1,13 +1,11 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/Art/UI/GameplayUI.uss?fileID=7433441132597879392&amp;guid=6f7cc65f6e906a54db405f42d1eee8c7&amp;type=3#GameplayUI" />
-    <ui:VisualElement name="root" style="flex-grow: 1;">
-        <ui:VisualElement name="Container" style="flex-grow: 0; flex-direction: column; bottom: 0; position: absolute; background-color: rgba(0, 0, 0, 0.41);">
-            <ui:VisualElement name="MessagesContainer" style="flex-grow: 1;">
-                <ui:Label text="THIS IS A LONG MESSAGE" name="Message" class="message" />
-            </ui:VisualElement>
-            <ui:VisualElement name="Action" style="flex-grow: 1; flex-direction: row;">
-                <ui:TextField placeholder-text="Message" name="Text" style="width: 505px; height: 69px; position: relative; top: auto; left: auto; bottom: auto;" />
-                <ui:Button text="SEND" name="Button" style="position: relative; top: auto; left: auto; height: auto; background-color: rgb(141, 243, 176);" />
+    <ui:VisualElement name="root" style="flex-grow: 1; flex-shrink: 1;">
+        <ui:VisualElement name="Container" style="flex-grow: 0; flex-direction: column; bottom: 0; position: absolute;">
+            <ui:VisualElement name="Recorder" style="flex-grow: 0; background-image: url(&quot;project://database/Assets/Art/UI/Sprites/recorder.png?fileID=722316600767818537&amp;guid=6716941a3b6ebe440ae7d0aab15fd696&amp;type=3#recorder_0&quot;); -unity-background-scale-mode: scale-to-fit; height: 540px; width: 389px;">
+                <ui:Button text="RECORD" name="RecordButton" style="position: absolute; top: 416px; left: 28px; height: 93px; width: 309px; font-size: 30px; color: rgb(255, 0, 0); background-color: rgb(168, 168, 168); -unity-font-style: bold;" />
+                <ui:Label text="0:05" name="RecordingLabel" class="message" style="color: rgb(79, 233, 63); position: absolute; top: 35px; left: 18px; background-color: rgb(51, 51, 51); font-size: 37px; height: 59px; width: 318px; -unity-text-align: upper-center;" />
+                <ui:Label text="Tapes Left: 5" name="TapesLeft" style="position: absolute; top: 209px; left: 20px; height: 48px; width: 326px; -unity-text-align: upper-center; font-size: 32px; color: rgb(243, 243, 243); background-color: rgb(1, 69, 183); -unity-font-style: bold;" />
             </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>

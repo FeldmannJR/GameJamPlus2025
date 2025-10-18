@@ -12,7 +12,9 @@
     "Unity.Services.Core",
     "Unity.Services.Authentication",
     "FishyUnityTransport",
-    "Unity.Networking.Transport"
+    "Unity.Networking.Transport",
+    "Adrenak.UniVoice.Runtime",
+    "Adrenak.UniMic.Runtime"
   ],
   "includePlatforms": [],
   "excludePlatforms": [],

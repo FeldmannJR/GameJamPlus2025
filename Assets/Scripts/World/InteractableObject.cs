@@ -26,6 +26,7 @@ namespace Scripts
         private Vector2 _velocity;
 
         public event Action OnInteracted;
+        public event Action OnLocalInteracted;
         public event Action OnStateChanged;
 
 
@@ -35,6 +36,8 @@ namespace Scripts
         public void OnLocalPlayerInteract()
         {
             Debug.Log("SENDING RPC");
+            OnLocalInteracted?.Invoke();
+
             RpcInteract();
         }
 

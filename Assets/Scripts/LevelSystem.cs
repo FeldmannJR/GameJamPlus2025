@@ -40,6 +40,8 @@ namespace DefaultNamespace
         public void Win()
         {
             OnWin?.Invoke();
+            UIService.Instance.ShowGameplay(false);
+            UIService.Instance.ShowGameEnd(true);
             _gameEnd.Show("Win");
         }
     }

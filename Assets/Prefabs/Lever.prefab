@@ -144,6 +144,7 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 1544309191464991726}
   ActiveSprite: {fileID: 8037847821924947724, guid: 3b67e4b575d90a74cae5bf3ee8068be9, type: 3}
   DeactivatedSprite: {fileID: -545409096982013404, guid: b32551c61b756d14a92d6e418d50f7a1, type: 3}
+  _canTurnOffManualy: 1
 --- !u!1 &5562900486348676931
 GameObject:
   m_ObjectHideFlags: 0
@@ -222,7 +223,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: -545409096982013404, guid: b32551c61b756d14a92d6e418d50f7a1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

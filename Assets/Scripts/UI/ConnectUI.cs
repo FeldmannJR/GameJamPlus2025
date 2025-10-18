@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Net;
 using Cysharp.Threading.Tasks;
-using FishNet.Discovery;
 using FishNet.Managing;
 using FishNet.Transporting;
 using FishNet.Transporting.UTP;
@@ -22,6 +21,7 @@ namespace UI
         [Q] private Label _yourCode;
         [Q] private Label _message;
         [Q] private VisualElement _connectContainer;
+        [Q] private Button _quitButton;
 
         private string _code;
         private bool _connecting = false;
@@ -33,6 +33,7 @@ namespace UI
             _startServer.clicked += StartServer;
             _connect.clicked += OnClick_Client;
             _yourCode.style.display = DisplayStyle.None;
+            _quitButton.clicked += () => Application.Quit();
             _message.text = "";
         }
 

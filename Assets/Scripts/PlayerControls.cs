@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using FishNet.Object;
 using Scripts;
 using Scripts.Helpers;
+using UI;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -10,6 +11,10 @@ namespace DefaultNamespace
 {
     public class PlayerControls : NetworkBehaviour
     {
+        public Transform GhostObject;
+
+
+        public static PlayerControls LocalPlayer;
         public bool Finished = false;
         public static event Action<PlayerControls> OnStarted;
         public float MoveSpeed = 1f;
@@ -28,21 +33,12 @@ namespace DefaultNamespace
         {
             OnStarted?.Invoke(this);
             if (!IsOwner) return;
-
-            RegisterGamePad();
-
+            LocalPlayer = this;
+            RegisterControls();
         }
 
-        private void RegisterKeyboard()
-        {
-            var input = new InputActionsGeneratedNoGamePad();
-            input.Player.Enable();
-            input.Player.Interact.performed += OnInteract;
-            input.Player.Move.performed += OnMove;
-            input.Player.Move.canceled += OnMove;
-        }
 
-        private void RegisterGamePad()
+        private void RegisterControls()
         {
             var input = new InputActionsGenerated();
             input.Player.Enable();
@@ -62,6 +58,10 @@ namespace DefaultNamespace
             var position = this.transform.position;
 
             _rigidbody2D.MovePosition(position + _moveDirection.ToVector3() * Time.deltaTime * MoveSpeed);
+            if (PositionConverterSystem.Instance.TryConvert(_rigidbody2D.position, out var ghostPos))
+            {
+                GhostObject.position = ghostPos;
+            }
         }
 
 
@@ -101,6 +101,7 @@ namespace DefaultNamespace
             catch (Exception ex)
             {
                 Debug.LogError(ex);
+                throw ex;
             }
         }
     }
