@@ -1,7 +1,4 @@
-﻿using System;
-using Codice.CM.Common.Tree;
-using FishNet.Object;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Scripts
 {
@@ -12,6 +9,7 @@ namespace Scripts
         public Sprite ActiveSprite;
         public Sprite DeactivatedSprite;
 
+        [SerializeField] private bool _canTurnOffManualy = true;
 
         private Sprite GetCurrentSprite()
         {
@@ -22,6 +20,12 @@ namespace Scripts
 
         {
             this.OnInteracted += OnInteracted_O;
+            _spriteRenderer.sprite = GetCurrentSprite();
+            this.OnStateChanged += OnStateChangedImpl;
+        }
+
+        private void OnStateChangedImpl()
+        {
             _spriteRenderer.sprite = GetCurrentSprite();
         }
 
@@ -34,8 +38,12 @@ namespace Scripts
         public void OnInteracted_O()
         {
             Debug.Log("INTERACTED");
+            if (On && !_canTurnOffManualy)
+            {
+                return;
+            }
+
             SetOn(!On);
-            UpdateState();
         }
     }
 }

@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using FishNet.Object;
-using ParrelSync;
 using Scripts;
 using Scripts.Helpers;
 using UnityEngine;
@@ -11,7 +10,8 @@ namespace DefaultNamespace
 {
     public class PlayerControls : NetworkBehaviour
     {
-        public static event Action<PlayerControls> OnStartedOwner;
+        public bool Finished = false;
+        public static event Action<PlayerControls> OnStarted;
         public float MoveSpeed = 1f;
         //private GeneratedInputActions _inputActions;
 
@@ -26,16 +26,33 @@ namespace DefaultNamespace
 
         public override void OnStartClient()
         {
+            OnStarted?.Invoke(this);
             if (!IsOwner) return;
-            OnStartedOwner?.Invoke(this);
-            var input = new InputActionsGenerated();
+
+            #if UNITY_EDITOR
+            if (ParrelSync.ClonesManager.IsClone())
+            {
+                RegisterGamePad();
+            }
+            else
+            {
+                RegisterKeyboard();
+            }
+            #else
+                RegisterGamePad();
+            #endif
+        }
+
+        private void RegisterKeyboard()
+        {
+            var input = new InputActionsGeneratedNoGamePad();
             input.Player.Enable();
             input.Player.Interact.performed += OnInteract;
             input.Player.Move.performed += OnMove;
             input.Player.Move.canceled += OnMove;
         }
 
-        private void RegisterKeyboard()
+        private void RegisterGamePad()
         {
             var input = new InputActionsGenerated();
             input.Player.Enable();
@@ -43,8 +60,6 @@ namespace DefaultNamespace
             input.Player.Move.performed += OnMove;
             input.Player.Move.canceled += OnMove;
         }
-
-      
 
         private void OnMove(InputAction.CallbackContext ev)
         {
@@ -64,7 +79,6 @@ namespace DefaultNamespace
         {
             try
             {
-
                 Debug.Log("On interact");
                 var filter = new ContactFilter2D();
                 filter.SetLayerMask(PhysicsLayers.Mask_Interactable);

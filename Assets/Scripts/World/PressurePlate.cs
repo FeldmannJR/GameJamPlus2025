@@ -1,6 +1,4 @@
-﻿using System;
-using Codice.CM.Common.Tree;
-using DefaultNamespace;
+﻿using DefaultNamespace;
 using FishNet.Object;
 using UnityEngine;
 

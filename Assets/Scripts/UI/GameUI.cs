@@ -1,7 +1,4 @@
-﻿using System;
-using DefaultNamespace;
-using UnityEditor.Callbacks;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UIElements;
 
 namespace UI

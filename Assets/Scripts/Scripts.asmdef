@@ -4,7 +4,8 @@
     "references": [
         "FishNet.Runtime",
         "Unity.InputSystem",
-        "ParrelSync"
+        "ParrelSync",
+        "UniTask"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

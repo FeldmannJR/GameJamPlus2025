@@ -5,26 +5,53 @@ namespace DefaultNamespace
 {
     public class CameraController : MonoBehaviour
     {
+        [SerializeField] private LevelSystem _level;
         public PlayerControls _player;
         private bool _playerSet = false;
 
 
         private void Start()
         {
-            PlayerControls.OnStartedOwner += OnOwnerSet;
+            PlayerControls.OnStarted += OnSet;
+            _level.OnPlayerFinish += OnPlayerFinish;
         }
 
-        private void OnOwnerSet(PlayerControls obj)
+        private void OnPlayerFinish(PlayerControls finished)
+        {
+            if (!finished.IsOwner) return;
+            foreach (var pl in _level._players)
+            {
+                if (!pl.IsOwner && !pl.Finished)
+                {
+                    SetTarget(finished);
+                }
+            }
+        }
+
+        private void OnSet(PlayerControls obj)
+        {
+            if (obj.IsOwner)
+            {
+                SetTarget(obj);
+            }
+        }
+
+
+        public void SetTarget(PlayerControls player)
         {
             _playerSet = true;
-            _player = obj;
+            _player = player;
+        }
+
+        public void OnPlayerFinished()
+        {
         }
 
         private void Update()
         {
             if (_playerSet)
             {
-                var pos =  _player.transform.position;
+                var pos = _player.transform.position;
                 pos.z = -10;
                 this.transform.position = pos;
             }
