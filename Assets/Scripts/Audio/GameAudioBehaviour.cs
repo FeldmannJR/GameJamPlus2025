@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Threading;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 
 namespace Audio
@@ -33,6 +35,29 @@ namespace Audio
         public void Stop()
         {
             _audioSource.Stop();
+        }
+
+        private CancellationTokenSource _cc;
+
+        public void Pause()
+        {
+            if (_cc != null)
+            {
+                _cc.Cancel();
+                _cc = null;
+            }
+
+            _audioSource.Pause();
+        }
+
+        public void Unpause()
+        {
+            _cc = new CancellationTokenSource();
+            UniTask.Delay(4000, cancellationToken: _cc.Token).ContinueWith(() =>
+            {
+                _audioSource.UnPause();
+                _cc = null;
+            });
         }
     }
 }

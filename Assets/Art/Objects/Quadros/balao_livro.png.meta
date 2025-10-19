@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e364adb41bb9f9344afccfd1610969a3
+guid: 4edc4ee09956ef2498b1b0c23127c185
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5258014685671031689
-    second: balao2(1)_0
+      213: -4961031543717563425
+    second: balao_livro_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: balao2(1)_0
+      name: balao_livro_0
       rect:
         serializedVersion: 2
         x: 0
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 77c7ac46087c707b0800000000000000
-      internalID: -5258014685671031689
+      spriteID: fd3f43d7810e62bb0800000000000000
+      internalID: -4961031543717563425
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      balao2(1)_0: -5258014685671031689
+      balao_livro_0: -4961031543717563425
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

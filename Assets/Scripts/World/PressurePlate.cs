@@ -1,4 +1,5 @@
 ﻿using System;
+using Audio;
 using AYellowpaper.SerializedCollections;
 using DefaultNamespace;
 using FishNet.Object;
@@ -11,6 +12,8 @@ namespace Scripts
     {
         [SerializeField] private SpriteRenderer _spriteRenderer;
 
+        [SerializeField] private GameAudioBehaviour _press;
+        [SerializeField] private GameAudioBehaviour _leave;
 
         [Serializable]
         public enum PPColors
@@ -34,8 +37,6 @@ namespace Scripts
         public SerializedDictionary<PPColors, ColorConfig> Colors = new();
 
 
-        public GameObject PressedGameObject;
-        public GameObject IdleGameObject;
 
 
         public PPColors Color = PPColors.White;
@@ -56,7 +57,6 @@ namespace Scripts
         private void UpdateState()
         {
             if (!this.gameObject.activeSelf) return;
-            if (PressedGameObject == null || IdleGameObject == null) return;
             SetColor(On);
         }
 
@@ -68,6 +68,7 @@ namespace Scripts
                 v.PressedGameObject.SetActive(false);
             }
 
+            if (Colors.Count == 0) return;
             var obj = Colors[Color];
             obj.PressedGameObject.SetActive(active);
             obj.IdleGameObject.SetActive(!active);
@@ -77,10 +78,15 @@ namespace Scripts
         private void OnTriggerEnter2D(Collider2D other)
         {
             if (!this.gameObject.activeSelf) return;
-            if (TryGetPlayer(other, out _))
+            if (TryGetPlayer(other, out var pl))
             {
                 SetOn(true);
                 UpdateState();
+                if (pl.IsOwner)
+                    if (Time.time > 3f) // hack for not playing when starting
+                    {
+                        _press?.PlayOneShot();
+                    }
             }
         }
 
@@ -88,11 +94,16 @@ namespace Scripts
         private void OnTriggerExit2D(Collider2D other)
         {
             if (!this.gameObject.activeSelf) return;
-            if (TryGetPlayer(other, out _))
+            if (TryGetPlayer(other, out var pl))
             {
                 OnTrigerred?.Invoke();
                 SetOn(false);
                 UpdateState();
+                if (pl.IsOwner)
+                    if (Time.time > 3f) // hack for not playing when starting
+                    {
+                        _leave?.PlayOneShot();
+                    }
             }
         }
 

@@ -7,12 +7,21 @@ namespace Audio
 {
     public enum AudioEnum
     {
-        None,
-        Telephone_Receiving,
-        Telephone_Calling,
-        Telephone_Hangup,
-        Telephone_Connected,
-        
+        None = 0,
+        Telephone_Receiving = 1,
+        Telephone_Calling = 2,
+        Telephone_Hangup = 3,
+        Telephone_Connected = 4,
+        Telephone_Static = 5,
+        PP_On = 6,
+        PP_Off = 7,
+        Button_On = 8,
+        Button_Off = 9,
+        Telephone_HangupOther = 10,
+        Door_Unlock = 11,
+
+        GameTheme = 12,
+        MainMenuTHeme = 13,
     }
 
     [Serializable]

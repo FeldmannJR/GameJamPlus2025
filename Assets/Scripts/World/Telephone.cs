@@ -5,6 +5,7 @@ using DefaultNamespace;
 using FishNet.Object;
 using Scripts.Helpers;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Scripts
 {
@@ -22,10 +23,16 @@ namespace Scripts
         public Telephone Other;
         private States _state = States.Idle;
 
+
+        private int _callsAmount = 0;
+        public UnityEvent OnTakeFirstCall;
+        public UnityEvent OnLocalInteractedUnityEvent;
+        public UnityEvent OnReceivedCallUnityEvent;
+
         private PlayerControls _playerInteracted;
-
+        public BoxCollider2D _turnOffCollider;
         public GameAudioBehaviour[] Audios;
-
+        public GameAudioBehaviour StaticAudio;
         private Cooldown _interactionCooldown = new Cooldown(TimeSpan.FromSeconds(0.5f));
 
         public void Play(AudioEnum audio, bool repeating = false)
@@ -64,6 +71,7 @@ namespace Scripts
 
         void OnOnLocalInteracted()
         {
+            OnLocalInteractedUnityEvent?.Invoke();
             _playerInteracted = PlayerControls.LocalPlayer;
             Debug.Log("CELULAR: OnOnLocalInteracted");
 
@@ -94,18 +102,21 @@ namespace Scripts
                 return;
             }
 
+            OnReceivedCallUnityEvent?.Invoke();
             _state = States.ReceivingCall;
+            MusicController.Instance.PauseMusic();
             Play(AudioEnum.Telephone_Receiving, true);
         }
 
 
         private void Update()
         {
-            if (_state == States.MakingCall || _state == States.ReceivingCall)
+            if (_state == States.MakingCall || _state == States.OnCall)
             {
-                if (Time.frameCount % 30 == 0)
+                if (_playerInteracted == null) return;
+
                 {
-                    if (Vector2.Distance(this.transform.position, _playerInteracted.transform.position) > 8f)
+                    if (!_turnOffCollider.bounds.Contains(_playerInteracted.FootTransform.position))
                     {
                         Disconnect();
                     }
@@ -117,6 +128,7 @@ namespace Scripts
         {
             Debug.Log("CELULAR: MakeCall");
             _state = States.MakingCall;
+            MusicController.Instance.PauseMusic();
             Play(AudioEnum.Telephone_Calling, true);
             Other.RpcCall(true);
         }
@@ -126,16 +138,29 @@ namespace Scripts
             Debug.Log("CELULAR: Disconnect");
             _uniVoice.StopRecording();
             _state = States.Idle;
+            StaticAudio.Stop();
             Play(AudioEnum.Telephone_Hangup);
             Other.RpcCall(false);
+            MusicController.Instance.ContinueMusic();
         }
 
         private void OnOtherDisconnected()
         {
+            if (_state == States.ReceivingCall)
+            {
+                _state = States.Idle;
+                Play(AudioEnum.None);
+                MusicController.Instance.ContinueMusic();
+                return;
+            }
+
+            if (_state != States.OnCall) return;
             Debug.Log("CELULAR: OnOtherDisconnected");
             _uniVoice.StopRecording();
+            StaticAudio.Stop();
             _state = States.Idle;
-            Play(AudioEnum.Telephone_Hangup);
+            Play(AudioEnum.Telephone_HangupOther);
+            MusicController.Instance.ContinueMusic();
         }
 
 
@@ -152,8 +177,12 @@ namespace Scripts
             Debug.Log("CELULAR: ConnectCall");
 
             Play(AudioEnum.Telephone_Connected);
+            StaticAudio.PlayRepeating();
             _state = States.OnCall;
             _uniVoice.StartRecording();
+            if (_callsAmount == 0)
+                OnTakeFirstCall?.Invoke();
+            _callsAmount++;
         }
 
 

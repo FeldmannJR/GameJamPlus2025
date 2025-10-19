@@ -14,6 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: Scripts::Config.AudioConfigs
   Configs:
     _serializedList:
+    - Key: 6
+      Value:
+        Clips:
+        - {fileID: 8300000, guid: 7fd52cdbdc03e9544a83e41eeab8856b, type: 3}
+    - Key: 7
+      Value:
+        Clips:
+        - {fileID: 8300000, guid: ec83c61308b8f8745bf3b4813a8aac43, type: 3}
+    - Key: 5
+      Value:
+        Clips:
+        - {fileID: 8300000, guid: d44f413e117fe9f46b7c469052acc83e, type: 3}
     - Key: 4
       Value:
         Clips:
@@ -26,7 +38,31 @@ MonoBehaviour:
       Value:
         Clips:
         - {fileID: 8300000, guid: c1dcff46f901bf1418e4700922ce88e0, type: 3}
+    - Key: 11
+      Value:
+        Clips:
+        - {fileID: 8300000, guid: 97668ef7f1184d94aa6e1639ec5e5498, type: 3}
     - Key: 3
       Value:
         Clips:
         - {fileID: 8300000, guid: 1a23a033879088840a81f99fdacb54a7, type: 3}
+    - Key: 10
+      Value:
+        Clips:
+        - {fileID: 8300000, guid: ae4d50ff1aaa10b43a902f8e7e068ce8, type: 3}
+    - Key: 8
+      Value:
+        Clips:
+        - {fileID: 8300000, guid: f9e6bedf98f738646b914f8e67ab5582, type: 3}
+    - Key: 9
+      Value:
+        Clips:
+        - {fileID: 8300000, guid: df0cd8e00ebe2e74c8e362345b633084, type: 3}
+    - Key: 12
+      Value:
+        Clips:
+        - {fileID: 8300000, guid: ac6a947a74e156b4e81faf9a9a21e8fe, type: 3}
+    - Key: 13
+      Value:
+        Clips:
+        - {fileID: 8300000, guid: 8c580193750093b4d93c447225957497, type: 3}

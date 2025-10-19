@@ -15,6 +15,7 @@ namespace DefaultNamespace
         public Transform GhostObject;
 
 
+        public Transform FootTransform;
         public static PlayerControls LocalPlayer;
         public bool Finished = false;
         public static event Action<PlayerControls> OnStarted;

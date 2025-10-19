@@ -38,6 +38,7 @@ namespace UI
             _levelSystem.OnGameStart += OnGameStart;
             _message.text = "";
             UpdateButtons();
+            _codeField.Focus();
         }
 
         private void OnGameStart()

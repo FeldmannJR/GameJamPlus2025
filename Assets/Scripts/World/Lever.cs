@@ -1,4 +1,5 @@
 ﻿using System;
+using Audio;
 using AYellowpaper.SerializedCollections;
 using DefaultNamespace;
 using DG.Tweening;
@@ -11,6 +12,8 @@ namespace Scripts
         [SerializeField] private SpriteRenderer _spriteRenderer;
         [SerializeField] private SpriteRenderer _imageToShowRenderer;
 
+        [SerializeField] private GameAudioBehaviour _turnOn;
+        [SerializeField] private GameAudioBehaviour _turnOff;
 
         public Sprite CustomOnSprite;
         public Sprite CustomOffSprite;
@@ -76,7 +79,23 @@ namespace Scripts
         {
             this.OnInteracted += OnInteracted_O;
             this.OnStateChanged += OnStateChangedImpl;
+            this.OnLocalInteracted += OnLocalImpl;
             UpdateColor();
+        }
+
+        private void OnLocalImpl()
+        {
+            if (Time.time > 3f) // hack for not playing when starting
+            {
+                if (On)
+                {
+                    _turnOff?.PlayOneShot();
+                }
+                else
+                {
+                    _turnOn?.PlayOneShot();
+                }
+            }
         }
 
         private void OnStateChangedImpl()
