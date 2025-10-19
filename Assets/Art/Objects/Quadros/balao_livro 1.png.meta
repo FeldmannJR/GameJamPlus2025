@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4edc4ee09956ef2498b1b0c23127c185
+guid: ce8e3a1cb4c252445bd2d55dfb7048ed
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4961031543717563425
-    second: balao_livro_0
+      213: -7659943886151201441
+    second: balao_livro 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: balao_livro_0
+      name: balao_livro 1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 865
-        height: 535
+        width: 947
+        height: 453
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fd3f43d7810e62bb0800000000000000
-      internalID: -4961031543717563425
+      spriteID: f5d4882ae9962b590800000000000000
+      internalID: -7659943886151201441
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      balao_livro_0: -4961031543717563425
+      balao_livro 1_0: -7659943886151201441
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

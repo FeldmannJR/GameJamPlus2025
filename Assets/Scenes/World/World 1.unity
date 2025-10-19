@@ -3681,6 +3681,10 @@ PrefabInstance:
       value: -1.4070745
       objectReference: {fileID: 0}
     - target: {fileID: 1180330582704174840, guid: 8d4fa136b07ffcb48afeb3ba5401260d, type: 3}
+      propertyPath: _isSpawnable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1180330582704174840, guid: 8d4fa136b07ffcb48afeb3ba5401260d, type: 3}
       propertyPath: WasActiveDuringEdit
       value: 1
       objectReference: {fileID: 0}
@@ -5310,7 +5314,7 @@ Transform:
   m_GameObject: {fileID: 859609214}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -17.26, y: 17.54, z: 0}
+  m_LocalPosition: {x: -12.91, y: 18.23, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5484,6 +5488,57 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &891043496
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 891043497}
+  - component: {fileID: 891043498}
+  m_Layer: 0
+  m_Name: Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &891043497
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 891043496}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.12661, y: 0.70352995, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &891043498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 891043496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68cd48ca99c7de646884704457b61f59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Scripts::CustomSpawner
+  Prefabs:
+  - {fileID: 8787157710395725323, guid: 2546f63fc288b08409658da5c9815b01, type: 3}
+  - {fileID: 8787157710395725323, guid: f77fa71c1a7e776479b16e68e5e5def1, type: 3}
+  SpawnPositions:
+  - {fileID: 404919111}
+  - {fileID: 859609215}
+  _networkManager: {fileID: 7342881419119218090}
 --- !u!1 &905454096
 GameObject:
   m_ObjectHideFlags: 0
@@ -8072,16 +8127,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 767550471865087321, guid: 7acaf90a4fc66a2469ecf75da410fb57, type: 3}
       propertyPath: m_Size.x
-      value: 8.65
+      value: 9.47
       objectReference: {fileID: 0}
     - target: {fileID: 767550471865087321, guid: 7acaf90a4fc66a2469ecf75da410fb57, type: 3}
       propertyPath: m_Size.y
-      value: 5.35
+      value: 4.53
       objectReference: {fileID: 0}
     - target: {fileID: 767550471865087321, guid: 7acaf90a4fc66a2469ecf75da410fb57, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 4edc4ee09956ef2498b1b0c23127c185, type: 3}
+      objectReference: {fileID: 21300000, guid: ce8e3a1cb4c252445bd2d55dfb7048ed, type: 3}
     - target: {fileID: 767550471865087321, guid: 7acaf90a4fc66a2469ecf75da410fb57, type: 3}
       propertyPath: m_Color.a
       value: 0
@@ -10218,6 +10273,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b515024aba1340759c5c92d9c19c681b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Scripts::DefaultNamespace.LevelSystem
+  _spawner: {fileID: 891043498}
   _players: []
   _gameEnd: {fileID: 670704188}
   GameStarted: 0
@@ -11669,6 +11725,10 @@ PrefabInstance:
     - target: {fileID: 1071147392416170991, guid: 8d4fa136b07ffcb48afeb3ba5401260d, type: 3}
       propertyPath: m_Offset.y
       value: -1.6558568
+      objectReference: {fileID: 0}
+    - target: {fileID: 1180330582704174840, guid: 8d4fa136b07ffcb48afeb3ba5401260d, type: 3}
+      propertyPath: _isSpawnable
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1180330582704174840, guid: 8d4fa136b07ffcb48afeb3ba5401260d, type: 3}
       propertyPath: WasActiveDuringEdit
@@ -14242,23 +14302,6 @@ RectTransform:
   m_AnchoredPosition: {x: 6, y: -6}
   m_SizeDelta: {x: -12, y: -12}
   m_Pivot: {x: 0, y: 1}
---- !u!114 &7342881419119218084
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7342881419119218091}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 211a9f6ec51ddc14f908f5acc0cd0423, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _playerPrefab: {fileID: 8787157710395725323, guid: 2546f63fc288b08409658da5c9815b01, type: 3}
-  _addToDefaultScene: 1
-  Spawns:
-  - {fileID: 404919111}
-  - {fileID: 859609215}
 --- !u!4 &7342881419119218089
 Transform:
   m_ObjectHideFlags: 0
@@ -14305,9 +14348,7 @@ GameObject:
   - component: {fileID: 7342881419119218089}
   - component: {fileID: 7342881419119218090}
   - component: {fileID: 192365389525757068}
-  - component: {fileID: 7342881419119218084}
   - component: {fileID: 7342881419119218092}
-  - component: {fileID: 7342881419119218093}
   - component: {fileID: 7342881419119218094}
   m_Layer: 0
   m_Name: NetworkManager
@@ -14335,18 +14376,6 @@ MonoBehaviour:
   DisableServerRpcLinks: 0
   DisableReplicateRpcLinks: 0
   DisableReconcileRpcLinks: 0
---- !u!114 &7342881419119218093
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7342881419119218091}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdee964473d743b1bc62fd8f82ca78f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Scripts::FishNet.Discovery.NetworkDiscovery
 --- !u!114 &7342881419119218094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14494,6 +14523,7 @@ GameObject:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 891043497}
   - {fileID: 7342881419119218089}
   - {fileID: 246568844}
   - {fileID: 656410930}

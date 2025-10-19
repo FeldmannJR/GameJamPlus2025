@@ -1,0 +1,1417 @@
+fileFormatVersion: 2
+guid: 11b2a7fffc3ac654eaa9e8e0873f9d24
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8019969605688538600
+    second: mae_floating(1)_0
+  - first:
+      213: -4575143183324491814
+    second: mae_floating(1)_1
+  - first:
+      213: 5744627011841117203
+    second: mae_floating(1)_2
+  - first:
+      213: 2290936632716303972
+    second: mae_floating(1)_3
+  - first:
+      213: -8893670372206042469
+    second: mae_floating(1)_4
+  - first:
+      213: -2932981141002816224
+    second: mae_floating(1)_5
+  - first:
+      213: -7712587545866132880
+    second: mae_floating(1)_6
+  - first:
+      213: -38097594949533623
+    second: mae_floating(1)_7
+  - first:
+      213: 2080315400695384846
+    second: mae_floating(1)_8
+  - first:
+      213: 3676512820020155766
+    second: mae_floating(1)_9
+  - first:
+      213: -30330867468006132
+    second: mae_floating(1)_10
+  - first:
+      213: 5800415918302470741
+    second: mae_floating(1)_11
+  - first:
+      213: 5516334123974988917
+    second: mae_floating(1)_12
+  - first:
+      213: 5229622715957113935
+    second: mae_floating(1)_13
+  - first:
+      213: -3570372779317321745
+    second: mae_floating(1)_14
+  - first:
+      213: 4523091078340955787
+    second: mae_floating(1)_15
+  - first:
+      213: -7625669072814262597
+    second: mae_floating(1)_16
+  - first:
+      213: -1731449915837565778
+    second: mae_floating(1)_17
+  - first:
+      213: -1865014406708536501
+    second: mae_floating(1)_18
+  - first:
+      213: 5778468131248729293
+    second: mae_floating(1)_19
+  - first:
+      213: 8823001191726170342
+    second: mae_floating(1)_20
+  - first:
+      213: -6007887446602663072
+    second: mae_floating(1)_21
+  - first:
+      213: 3388686887079778643
+    second: mae_floating(1)_22
+  - first:
+      213: -4751779799071028426
+    second: mae_floating(1)_23
+  - first:
+      213: 2253525616480527327
+    second: mae_floating(1)_24
+  - first:
+      213: 8265007040624407779
+    second: mae_floating(1)_25
+  - first:
+      213: -3808427796405756867
+    second: mae_floating(1)_26
+  - first:
+      213: -1130402943351398917
+    second: mae_floating(1)_27
+  - first:
+      213: 5338661161923441048
+    second: mae_floating(1)_28
+  - first:
+      213: -1297912674916711924
+    second: mae_floating(1)_29
+  - first:
+      213: -2088612169072061160
+    second: mae_floating(1)_30
+  - first:
+      213: -4857900755994480720
+    second: mae_floating(1)_31
+  - first:
+      213: 878508165880282285
+    second: mae_floating(1)_32
+  - first:
+      213: 2447717410342741805
+    second: mae_floating(1)_33
+  - first:
+      213: 8606709085941737901
+    second: mae_floating(1)_34
+  - first:
+      213: 1340595085096164123
+    second: mae_floating(1)_35
+  - first:
+      213: 4777108644841197791
+    second: mae_floating(1)_36
+  - first:
+      213: 1672930500976099714
+    second: mae_floating(1)_37
+  - first:
+      213: -8326955790429776893
+    second: mae_floating(1)_38
+  - first:
+      213: 4256348967593405114
+    second: mae_floating(1)_39
+  - first:
+      213: 7141598429127694772
+    second: mae_floating(1)_40
+  - first:
+      213: 1802286761028410
+    second: mae_floating(1)_41
+  - first:
+      213: 6512597487287183915
+    second: mae_floating(1)_42
+  - first:
+      213: -8068682249340306873
+    second: mae_floating(1)_43
+  - first:
+      213: -8058074258641210682
+    second: mae_floating(1)_44
+  - first:
+      213: 2576007795249313341
+    second: mae_floating(1)_45
+  - first:
+      213: -8654817308886479022
+    second: mae_floating(1)_46
+  - first:
+      213: -2324059736255065639
+    second: mae_floating(1)_47
+  - first:
+      213: -4971953379894533701
+    second: mae_floating(1)_48
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 240
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mae_floating(1)_0
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 6942
+        width: 821
+        height: 974
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81a418f922853b090800000000000000
+      internalID: -8019969605688538600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mae_floating(1)_1
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 6942
+        width: 821
+        height: 974
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adfc461d383d180c0800000000000000
+      internalID: -4575143183324491814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mae_floating(1)_2
+      rect:
+        serializedVersion: 2
+        x: 2085
+        y: 6942
+        width: 821
+        height: 974
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31c47e7b4d309bf40800000000000000
+      internalID: 5744627011841117203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mae_floating(1)_3
+      rect:
+        serializedVersion: 2
+        x: 3082
+        y: 6942
+        width: 821
+        height: 974
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46e1cf3caba0bcf10800000000000000
+      internalID: 2290936632716303972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mae_floating(1)_4
+      rect:
+        serializedVersion: 2
+        x: 4079
+        y: 6942
+        width: 821
+        height: 974
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b922e3bcae5539480800000000000000
+      internalID: -8893670372206042469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mae_floating(1)_5
+      rect:
+        serializedVersion: 2
+        x: 5076
+        y: 6928
+        width: 821
+        height: 982
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0257b9d1135fb47d0800000000000000
+      internalID: -2932981141002816224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mae_floating(1)_6
+      rect:
+        serializedVersion: 2
+        x: 6073
+        y: 6928
+        width: 821
+        height: 982
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0722c857d7267f490800000000000000
+      internalID: -7712587545866132880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mae_floating(1)_7
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 5784
+        width: 821
+        height: 982
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9408c327076a87ff0800000000000000
+      internalID: -38097594949533623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mae_floating(1)_8
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 5784
+        width: 821
+        height: 982
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0b093fb5d3cedc10800000000000000
+      internalID: 2080315400695384846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mae_floating(1)_9
+      rect:
+        serializedVersion: 2
+        x: 2085
+        y: 5784
+        width: 821
+        height: 982
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67598794ee8950330800000000000000
+      internalID: 3676512820020155766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mae_floating(1)_10
+      rect:
+        serializedVersion: 2
+        x: 3082
+        y: 5770
+        width: 821
+        height: 997
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0d07da9c3e349ff0800000000000000
+      internalID: -30330867468006132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mae_floating(1)_11
+      rect:
+        serializedVersion: 2
+        x: 4079
+        y: 5770
+        width: 821
+        height: 997
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 552a0f7bb873f7050800000000000000
+      internalID: 5800415918302470741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mae_floating(1)_12
+      rect:
+        serializedVersion: 2
+        x: 5076
+        y: 5770
+        width: 821
+        height: 997
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57415e1b8a4fd8c40800000000000000
+      internalID: 5516334123974988917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mae_floating(1)_13
+      rect:
+        serializedVersion: 2
+        x: 6073
+        y: 5770
+        width: 821
+        height: 997
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f44ffe5072a539840800000000000000
+      internalID: 5229622715957113935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mae_floating(1)_14
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 4626
+        width: 821
+        height: 997
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fef1115bfdc737ec0800000000000000
+      internalID: -3570372779317321745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mae_floating(1)_15
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 4612
+        width: 821
+        height: 1015
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8e40431f5f35ce30800000000000000
+      internalID: 4523091078340955787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mae_floating(1)_16
+      rect:
+        serializedVersion: 2
+        x: 2085
+        y: 4612
+        width: 821
+        height: 1015
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb6393c716e2c2690800000000000000
+      internalID: -7625669072814262597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mae_floating(1)_17
+      rect:
+        serializedVersion: 2
+        x: 3082
+        y: 4612
+        width: 821
+        height: 1015
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea43f14a977a8f7e0800000000000000
+      internalID: -1731449915837565778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mae_floating(1)_18
+      rect:
+        serializedVersion: 2
+        x: 4079
+        y: 4612
+        width: 821
+        height: 1015
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4bd62347432e16e0800000000000000
+      internalID: -1865014406708536501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mae_floating(1)_19
+      rect:
+        serializedVersion: 2
+        x: 5076
+        y: 4612
+        width: 821
+        height: 1015
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcceef4562e313050800000000000000
+      internalID: 5778468131248729293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mae_floating(1)_20
+      rect:
+        serializedVersion: 2
+        x: 6073
+        y: 4626
+        width: 821
+        height: 979
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e0cfad66d8917a70800000000000000
+      internalID: 8823001191726170342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mae_floating(1)_21
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 3482
+        width: 821
+        height: 979
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06b38bec232bf9ca0800000000000000
+      internalID: -6007887446602663072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mae_floating(1)_22
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 3482
+        width: 821
+        height: 979
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3591a6f05c8070f20800000000000000
+      internalID: 3388686887079778643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mae_floating(1)_23
+      rect:
+        serializedVersion: 2
+        x: 2085
+        y: 3482
+        width: 821
+        height: 979
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63b8e71e2794e0eb0800000000000000
+      internalID: -4751779799071028426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mae_floating(1)_24
+      rect:
+        serializedVersion: 2
+        x: 3082
+        y: 3482
+        width: 821
+        height: 979
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd3a096cb91264f10800000000000000
+      internalID: 2253525616480527327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mae_floating(1)_25
+      rect:
+        serializedVersion: 2
+        x: 4079
+        y: 3496
+        width: 821
+        height: 974
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e435821d1433b270800000000000000
+      internalID: 8265007040624407779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mae_floating(1)_26
+      rect:
+        serializedVersion: 2
+        x: 5076
+        y: 3496
+        width: 821
+        height: 974
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3cd28ad81fb52bc0800000000000000
+      internalID: -3808427796405756867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mae_floating(1)_27
+      rect:
+        serializedVersion: 2
+        x: 6073
+        y: 3496
+        width: 821
+        height: 974
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfddb7c13800050f0800000000000000
+      internalID: -1130402943351398917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mae_floating(1)_28
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 2352
+        width: 821
+        height: 974
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 891fe949a0cb61a40800000000000000
+      internalID: 5338661161923441048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mae_floating(1)_29
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 2352
+        width: 821
+        height: 974
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c02cc1e7c43ecfde0800000000000000
+      internalID: -1297912674916711924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mae_floating(1)_30
+      rect:
+        serializedVersion: 2
+        x: 2085
+        y: 2368
+        width: 821
+        height: 975
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 815d6e45c42c303e0800000000000000
+      internalID: -2088612169072061160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mae_floating(1)_31
+      rect:
+        serializedVersion: 2
+        x: 3082
+        y: 2368
+        width: 821
+        height: 975
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bfe8dc2005459cb0800000000000000
+      internalID: -4857900755994480720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mae_floating(1)_32
+      rect:
+        serializedVersion: 2
+        x: 4079
+        y: 2368
+        width: 821
+        height: 975
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dacf297b586113c00800000000000000
+      internalID: 878508165880282285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mae_floating(1)_33
+      rect:
+        serializedVersion: 2
+        x: 5076
+        y: 2368
+        width: 821
+        height: 975
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d27a402240a08f120800000000000000
+      internalID: 2447717410342741805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mae_floating(1)_34
+      rect:
+        serializedVersion: 2
+        x: 6073
+        y: 2368
+        width: 821
+        height: 975
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da92fa8305c217770800000000000000
+      internalID: 8606709085941737901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mae_floating(1)_35
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 1242
+        width: 821
+        height: 974
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1b9aca8020ca9210800000000000000
+      internalID: 1340595085096164123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mae_floating(1)_36
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 1242
+        width: 821
+        height: 974
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd015359003bb4240800000000000000
+      internalID: 4777108644841197791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mae_floating(1)_37
+      rect:
+        serializedVersion: 2
+        x: 2085
+        y: 1242
+        width: 821
+        height: 974
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 281c8945d61773710800000000000000
+      internalID: 1672930500976099714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mae_floating(1)_38
+      rect:
+        serializedVersion: 2
+        x: 3082
+        y: 1242
+        width: 821
+        height: 974
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3041d03a3d5b07c80800000000000000
+      internalID: -8326955790429776893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mae_floating(1)_39
+      rect:
+        serializedVersion: 2
+        x: 4079
+        y: 1242
+        width: 821
+        height: 974
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aba618db5d6911b30800000000000000
+      internalID: 4256348967593405114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mae_floating(1)_40
+      rect:
+        serializedVersion: 2
+        x: 5076
+        y: 1230
+        width: 821
+        height: 974
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b9d4a8feed0c1360800000000000000
+      internalID: 7141598429127694772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mae_floating(1)_41
+      rect:
+        serializedVersion: 2
+        x: 6073
+        y: 1230
+        width: 821
+        height: 974
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3bac269b27660000800000000000000
+      internalID: 1802286761028410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mae_floating(1)_42
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 86
+        width: 821
+        height: 974
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2aaad2d8e4616a50800000000000000
+      internalID: 6512597487287183915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mae_floating(1)_43
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 86
+        width: 821
+        height: 974
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74a32927e38460090800000000000000
+      internalID: -8068682249340306873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mae_floating(1)_44
+      rect:
+        serializedVersion: 2
+        x: 2085
+        y: 86
+        width: 821
+        height: 974
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c2b8ffb728fb2090800000000000000
+      internalID: -8058074258641210682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mae_floating(1)_45
+      rect:
+        serializedVersion: 2
+        x: 3082
+        y: 86
+        width: 821
+        height: 968
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d36f8760171dfb320800000000000000
+      internalID: 2576007795249313341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mae_floating(1)_46
+      rect:
+        serializedVersion: 2
+        x: 4079
+        y: 86
+        width: 821
+        height: 968
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25f4be34389e3e780800000000000000
+      internalID: -8654817308886479022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mae_floating(1)_47
+      rect:
+        serializedVersion: 2
+        x: 5076
+        y: 86
+        width: 821
+        height: 968
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d19ab7bbf74fbfd0800000000000000
+      internalID: -2324059736255065639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mae_floating(1)_48
+      rect:
+        serializedVersion: 2
+        x: 6073
+        y: 86
+        width: 821
+        height: 968
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb165975eb2100bb0800000000000000
+      internalID: -4971953379894533701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      mae_floating(1)_0: -8019969605688538600
+      mae_floating(1)_1: -4575143183324491814
+      mae_floating(1)_10: -30330867468006132
+      mae_floating(1)_11: 5800415918302470741
+      mae_floating(1)_12: 5516334123974988917
+      mae_floating(1)_13: 5229622715957113935
+      mae_floating(1)_14: -3570372779317321745
+      mae_floating(1)_15: 4523091078340955787
+      mae_floating(1)_16: -7625669072814262597
+      mae_floating(1)_17: -1731449915837565778
+      mae_floating(1)_18: -1865014406708536501
+      mae_floating(1)_19: 5778468131248729293
+      mae_floating(1)_2: 5744627011841117203
+      mae_floating(1)_20: 8823001191726170342
+      mae_floating(1)_21: -6007887446602663072
+      mae_floating(1)_22: 3388686887079778643
+      mae_floating(1)_23: -4751779799071028426
+      mae_floating(1)_24: 2253525616480527327
+      mae_floating(1)_25: 8265007040624407779
+      mae_floating(1)_26: -3808427796405756867
+      mae_floating(1)_27: -1130402943351398917
+      mae_floating(1)_28: 5338661161923441048
+      mae_floating(1)_29: -1297912674916711924
+      mae_floating(1)_3: 2290936632716303972
+      mae_floating(1)_30: -2088612169072061160
+      mae_floating(1)_31: -4857900755994480720
+      mae_floating(1)_32: 878508165880282285
+      mae_floating(1)_33: 2447717410342741805
+      mae_floating(1)_34: 8606709085941737901
+      mae_floating(1)_35: 1340595085096164123
+      mae_floating(1)_36: 4777108644841197791
+      mae_floating(1)_37: 1672930500976099714
+      mae_floating(1)_38: -8326955790429776893
+      mae_floating(1)_39: 4256348967593405114
+      mae_floating(1)_4: -8893670372206042469
+      mae_floating(1)_40: 7141598429127694772
+      mae_floating(1)_41: 1802286761028410
+      mae_floating(1)_42: 6512597487287183915
+      mae_floating(1)_43: -8068682249340306873
+      mae_floating(1)_44: -8058074258641210682
+      mae_floating(1)_45: 2576007795249313341
+      mae_floating(1)_46: -8654817308886479022
+      mae_floating(1)_47: -2324059736255065639
+      mae_floating(1)_48: -4971953379894533701
+      mae_floating(1)_5: -2932981141002816224
+      mae_floating(1)_6: -7712587545866132880
+      mae_floating(1)_7: -38097594949533623
+      mae_floating(1)_8: 2080315400695384846
+      mae_floating(1)_9: 3676512820020155766
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

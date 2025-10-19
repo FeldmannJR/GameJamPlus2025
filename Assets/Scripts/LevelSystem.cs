@@ -7,6 +7,8 @@ namespace DefaultNamespace
 {
     public class LevelSystem : MonoBehaviour
     {
+        [SerializeField] private CustomSpawner _spawner;
+
         public static LevelSystem Instance;
 
         public List<PlayerControls> _players = new();

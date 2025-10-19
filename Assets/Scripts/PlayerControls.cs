@@ -14,6 +14,8 @@ namespace DefaultNamespace
         public bool Freeze = false;
         public Transform GhostObject;
 
+        [SerializeField] private List<SpriteRenderer> _spriteRenderers = new();
+
 
         public Transform FootTransform;
         public static PlayerControls LocalPlayer;
@@ -64,6 +66,12 @@ namespace DefaultNamespace
         {
             if (Freeze) return;
             var position = this.transform.position;
+
+            if (_moveDirection.x != 0)
+                foreach (var spriteRenderer in _spriteRenderers)
+                {
+                    spriteRenderer.flipX = _moveDirection.x > 0;
+                }
 
             _rigidbody2D.MovePosition(position + _moveDirection.ToVector3() * Time.deltaTime * MoveSpeed);
             if (PositionConverterSystem.Instance.TryConvert(_rigidbody2D.position, out var ghostPos))
