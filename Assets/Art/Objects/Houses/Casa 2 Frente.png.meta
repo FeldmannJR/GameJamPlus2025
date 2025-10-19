@@ -1,0 +1,559 @@
+fileFormatVersion: 2
+guid: 7c64f23295bad3949a490e60c9618e56
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 415203012099273792
+    second: Casa 2 Frente_0
+  - first:
+      213: 7135013640451620418
+    second: Casa 2 Frente_1
+  - first:
+      213: 4085913555193738046
+    second: Casa 2 Frente_2
+  - first:
+      213: -6997692176982305640
+    second: Casa 2 Frente_3
+  - first:
+      213: 3741770097291034865
+    second: Casa 2 Frente_4
+  - first:
+      213: -5912984685026669491
+    second: Casa 2 Frente_5
+  - first:
+      213: 2609528445226203518
+    second: Casa 2 Frente_6
+  - first:
+      213: -936456197679298302
+    second: Casa 2 Frente_7
+  - first:
+      213: -4641600680372025501
+    second: Casa 2 Frente_8
+  - first:
+      213: 3207444627776272869
+    second: Casa 2 Frente_9
+  - first:
+      213: -4763171037410725709
+    second: Casa 2 Frente_10
+  - first:
+      213: 8679896737464687670
+    second: Casa 2 Frente_11
+  - first:
+      213: -6516713948174257786
+    second: Casa 2 Frente_12
+  - first:
+      213: 3270560735336191954
+    second: Casa 2 Frente_13
+  - first:
+      213: 281895779270909577
+    second: Casa 2 Frente_14
+  - first:
+      213: 2930276298615036444
+    second: Casa 2 Frente_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Casa 2 Frente_0
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 5556
+        width: 466
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04479dd80f813c500800000000000000
+      internalID: 415203012099273792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casa 2 Frente_1
+      rect:
+        serializedVersion: 2
+        x: 1841
+        y: 4782
+        width: 532
+        height: 875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24e7fa26a19a40360800000000000000
+      internalID: 7135013640451620418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casa 2 Frente_2
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 4909
+        width: 318
+        height: 523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e33b648fab414b830800000000000000
+      internalID: 4085913555193738046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casa 2 Frente_3
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 4323
+        width: 493
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89490775a0433ee90800000000000000
+      internalID: -6997692176982305640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casa 2 Frente_4
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 4325
+        width: 496
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f0063824107de330800000000000000
+      internalID: 3741770097291034865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casa 2 Frente_5
+      rect:
+        serializedVersion: 2
+        x: 2448
+        y: 4337
+        width: 220
+        height: 416
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4c09aed1cbd0fda0800000000000000
+      internalID: -5912984685026669491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casa 2 Frente_6
+      rect:
+        serializedVersion: 2
+        x: 3293
+        y: 3395
+        width: 1029
+        height: 869
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e793cf88b48e63420800000000000000
+      internalID: 2609528445226203518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casa 2 Frente_7
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 2990
+        width: 2670
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 209cc9dbc0a0103f0800000000000000
+      internalID: -936456197679298302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casa 2 Frente_8
+      rect:
+        serializedVersion: 2
+        x: 3475
+        y: 2848
+        width: 682
+        height: 491
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 367c63106c8b59fb0800000000000000
+      internalID: -4641600680372025501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casa 2 Frente_9
+      rect:
+        serializedVersion: 2
+        x: 4034
+        y: 3318
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e9f65b25e1238c20800000000000000
+      internalID: 3207444627776272869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casa 2 Frente_10
+      rect:
+        serializedVersion: 2
+        x: 2109
+        y: 2439
+        width: 318
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b074b68d21d5edb0800000000000000
+      internalID: -4763171037410725709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casa 2 Frente_11
+      rect:
+        serializedVersion: 2
+        x: 2663
+        y: 2166
+        width: 488
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63c97ab3810357870800000000000000
+      internalID: 8679896737464687670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casa 2 Frente_12
+      rect:
+        serializedVersion: 2
+        x: 3687
+        y: 2161
+        width: 1334
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6817d30f03bff85a0800000000000000
+      internalID: -6516713948174257786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casa 2 Frente_13
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 1317
+        width: 1069
+        height: 343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d7dd0e19ad536d20800000000000000
+      internalID: 3270560735336191954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casa 2 Frente_14
+      rect:
+        serializedVersion: 2
+        x: 1662
+        y: 1309
+        width: 2518
+        height: 323
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98edf1bb7be79e300800000000000000
+      internalID: 281895779270909577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casa 2 Frente_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1838
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1a12b0b4ce6aa820800000000000000
+      internalID: 2930276298615036444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Casa 2 Frente_0: 415203012099273792
+      Casa 2 Frente_1: 7135013640451620418
+      Casa 2 Frente_10: -4763171037410725709
+      Casa 2 Frente_11: 8679896737464687670
+      Casa 2 Frente_12: -6516713948174257786
+      Casa 2 Frente_13: 3270560735336191954
+      Casa 2 Frente_14: 281895779270909577
+      Casa 2 Frente_15: 2930276298615036444
+      Casa 2 Frente_2: 4085913555193738046
+      Casa 2 Frente_3: -6997692176982305640
+      Casa 2 Frente_4: 3741770097291034865
+      Casa 2 Frente_5: -5912984685026669491
+      Casa 2 Frente_6: 2609528445226203518
+      Casa 2 Frente_7: -936456197679298302
+      Casa 2 Frente_8: -4641600680372025501
+      Casa 2 Frente_9: 3207444627776272869
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

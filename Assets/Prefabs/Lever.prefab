@@ -142,8 +142,25 @@ MonoBehaviour:
   _networkObjectCache: {fileID: 7880334002641620101}
   _on: 0
   _spriteRenderer: {fileID: 1544309191464991726}
-  ActiveSprite: {fileID: 8037847821924947724, guid: 3b67e4b575d90a74cae5bf3ee8068be9, type: 3}
-  DeactivatedSprite: {fileID: -545409096982013404, guid: b32551c61b756d14a92d6e418d50f7a1, type: 3}
+  _imageToShowRenderer: {fileID: 0}
+  CustomOnSprite: {fileID: 0}
+  CustomOffSprite: {fileID: 0}
+  Colors:
+    _serializedList:
+    - Key: 0
+      Value:
+        On: {fileID: 21300000, guid: 5fdf7607363b37e499df3c41abfce034, type: 3}
+        Off: {fileID: 21300000, guid: 53b592ed1ab827b4fba01e2f1df0fff1, type: 3}
+    - Key: 1
+      Value:
+        On: {fileID: 21300000, guid: 366fa7eb4c8989246a769f60fd464f0a, type: 3}
+        Off: {fileID: 21300000, guid: 4c2c4bf890b96ec42a398ce085f0f4ff, type: 3}
+    - Key: 2
+      Value:
+        On: {fileID: 21300000, guid: e486aa158d568a54a98a62f50fffef38, type: 3}
+        Off: {fileID: 21300000, guid: 05cbdab51b3f8f846844331a117036ed, type: 3}
+  ImageToShow: {fileID: 0}
+  CurrentColor: 0
   _canTurnOffManualy: 1
 --- !u!1 &5562900486348676931
 GameObject:
@@ -223,13 +240,13 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
-  m_Sprite: {fileID: -545409096982013404, guid: b32551c61b756d14a92d6e418d50f7a1, type: 3}
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 53b592ed1ab827b4fba01e2f1df0fff1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.32, y: 0.32}
+  m_Size: {x: 1.74, y: 1.18}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

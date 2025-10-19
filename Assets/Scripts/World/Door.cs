@@ -27,7 +27,7 @@ namespace Scripts
         public void SetOpen(bool open)
         {
             Open = open;
-            _spriteRenderer.sprite = Open ? OpenSprite : ClosedSprite;
+            _spriteRenderer.color = !Open ? Color.white : new Color(1, 1, 1, 0.15f);
             _colliderObject.SetActive(!open);
         }
 

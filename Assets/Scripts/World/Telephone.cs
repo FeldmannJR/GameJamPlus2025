@@ -22,6 +22,8 @@ namespace Scripts
         public Telephone Other;
         private States _state = States.Idle;
 
+        private PlayerControls _playerInteracted;
+
         public GameAudioBehaviour[] Audios;
 
         private Cooldown _interactionCooldown = new Cooldown(TimeSpan.FromSeconds(0.5f));
@@ -62,6 +64,7 @@ namespace Scripts
 
         void OnOnLocalInteracted()
         {
+            _playerInteracted = PlayerControls.LocalPlayer;
             Debug.Log("CELULAR: OnOnLocalInteracted");
 
             if (!_interactionCooldown.CheckTrigger()) return;
@@ -95,6 +98,20 @@ namespace Scripts
             Play(AudioEnum.Telephone_Receiving, true);
         }
 
+
+        private void Update()
+        {
+            if (_state == States.MakingCall || _state == States.ReceivingCall)
+            {
+                if (Time.frameCount % 30 == 0)
+                {
+                    if (Vector2.Distance(this.transform.position, _playerInteracted.transform.position) > 8f)
+                    {
+                        Disconnect();
+                    }
+                }
+            }
+        }
 
         public void MakeCall()
         {

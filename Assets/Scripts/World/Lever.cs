@@ -1,4 +1,6 @@
-﻿using DefaultNamespace;
+﻿using System;
+using AYellowpaper.SerializedCollections;
+using DefaultNamespace;
 using DG.Tweening;
 using UnityEngine;
 
@@ -10,35 +12,76 @@ namespace Scripts
         [SerializeField] private SpriteRenderer _imageToShowRenderer;
 
 
+        public Sprite CustomOnSprite;
+        public Sprite CustomOffSprite;
+
+        [Serializable]
+        public enum LeverColor
+        {
+            Green,
+            Orange,
+            Blue
+        }
+
+        [Serializable]
+        public class ColorConfig
+        {
+            public Sprite On;
+            public Sprite Off;
+        }
+
+        public SerializedDictionary<LeverColor, ColorConfig> Colors = new();
+
+
         public Sprite ImageToShow;
 
 
-        public Sprite ActiveSprite;
-        public Sprite DeactivatedSprite;
+        public LeverColor CurrentColor;
+
 
         [SerializeField] private bool _canTurnOffManualy = true;
 
-        private Sprite GetCurrentSprite()
+
+        protected override void OnValidate()
         {
-            return On ? ActiveSprite : DeactivatedSprite;
+            SetColor(CurrentColor, false);
+        }
+
+        public void SetColor(LeverColor color, bool on)
+        {
+            if (CustomOnSprite && on)
+            {
+                _spriteRenderer.sprite = CustomOnSprite;
+                return;
+            }
+
+            if (CustomOffSprite && !on)
+            {
+                _spriteRenderer.sprite = CustomOffSprite;
+                return;
+            }
+
+            var obj = Colors[color];
+            _spriteRenderer.sprite = on ? obj.On : obj.Off;
+        }
+
+
+        public void UpdateColor()
+        {
+            SetColor(CurrentColor, On);
         }
 
         public override void OnStartClient()
 
         {
             this.OnInteracted += OnInteracted_O;
-            _spriteRenderer.sprite = GetCurrentSprite();
             this.OnStateChanged += OnStateChangedImpl;
+            UpdateColor();
         }
 
         private void OnStateChangedImpl()
         {
-            _spriteRenderer.sprite = GetCurrentSprite();
-        }
-
-        private void UpdateState()
-        {
-            _spriteRenderer.sprite = GetCurrentSprite();
+            UpdateColor();
         }
 
 
@@ -55,9 +98,12 @@ namespace Scripts
 
         public void ShowFrame(bool show)
         {
-            if (ImageToShow == null) return;
+            if (_imageToShowRenderer == null) return;
+            if (ImageToShow != null)
+            {
+                _imageToShowRenderer.sprite = ImageToShow;
+            }
 
-            _imageToShowRenderer.sprite = ImageToShow;
             _imageToShowRenderer.DOColor(show ? Color.white : Color.clear, 0.3f);
         }
 
