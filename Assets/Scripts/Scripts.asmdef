@@ -14,7 +14,8 @@
     "FishyUnityTransport",
     "Unity.Networking.Transport",
     "Adrenak.UniVoice.Runtime",
-    "Adrenak.UniMic.Runtime"
+    "Adrenak.UniMic.Runtime",
+    "AYellowpaper.SerializedCollections"
   ],
   "includePlatforms": [],
   "excludePlatforms": [],

@@ -27,8 +27,8 @@ namespace DefaultNamespace
             {
                 var diff = vector3 - BoxA.bounds.min;
 
-                
-                convertedPosition =  BoxB.bounds.min + diff;
+
+                convertedPosition = BoxB.bounds.min + diff;
                 return true;
             }
 
@@ -36,12 +36,19 @@ namespace DefaultNamespace
             {
                 var diff = vector3 - BoxB.bounds.min;
 
-                convertedPosition =  BoxA.bounds.min + diff;
+                convertedPosition = BoxA.bounds.min + diff;
                 return true;
             }
 
             convertedPosition = vector3;
             return false;
+        }
+
+
+        public bool ArePositionsOnSameHouse(Vector3 one, Vector3 two)
+        {
+            return (BoxA.bounds.Contains(one) && BoxA.bounds.Contains(two)) ||
+                   (BoxB.bounds.Contains(one) && BoxB.bounds.Contains(two));
         }
     }
 }
