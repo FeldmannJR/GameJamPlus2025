@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Net;
 using Cysharp.Threading.Tasks;
+using DefaultNamespace;
 using FishNet.Managing;
 using FishNet.Transporting;
 using FishNet.Transporting.UTP;
@@ -15,15 +16,16 @@ namespace UI
     public class ConnectUI : GameUI
     {
         [SerializeField] private NetworkManager _networkManager;
+        [SerializeField] private LevelSystem _levelSystem;
         [Q] private Button _connect;
         [Q] private Button _startServer;
         [Q] private TextField _codeField;
-        [Q] private Label _yourCode;
+        [Q] private Label _code;
         [Q] private Label _message;
-        [Q] private VisualElement _connectContainer;
+        [Q] private VisualElement _createOrJoin;
+        [Q] private VisualElement _waiting;
         [Q] private Button _quitButton;
 
-        private string _code;
         private bool _connecting = false;
         private bool _connected = false;
 
@@ -32,11 +34,23 @@ namespace UI
         {
             _startServer.clicked += StartServer;
             _connect.clicked += OnClick_Client;
-            _yourCode.style.display = DisplayStyle.None;
             _quitButton.clicked += () => Application.Quit();
+            _levelSystem.OnGameStart += OnGameStart;
             _message.text = "";
+            UpdateButtons();
         }
 
+        private void OnGameStart()
+        {
+            _createOrJoin.style.display = DisplayStyle.None;
+            _waiting.style.display = DisplayStyle.None;
+        }
+
+
+        public void SetCodeLabel(string code)
+        {
+            _code.text = $"JOIN CODE: <color=yellow>{code.ToUpperInvariant()}</color>";
+        }
 
         public void OnClick_Server()
         {
@@ -61,8 +75,8 @@ namespace UI
             try
             {
                 var joinCode = await StartHostWithRelay(2, "dtls");
-                _yourCode.text = "YOUR CODE: " + joinCode;
-                _yourCode.style.display = DisplayStyle.Flex;
+                SetCodeLabel(joinCode);
+
 
                 Debug.Log("STARTED SERVER " + joinCode);
                 _connected = true;
@@ -82,15 +96,14 @@ namespace UI
 
         public async UniTask Join(string joinCode)
         {
-            _message.text = "Allocating server";
+            _message.text = "Attempting to join";
             _connecting = true;
             UpdateButtons();
 
             try
             {
                 await StartClientWithRelay(joinCode, "dtls");
-                _yourCode.text = "YOUR CODE: " + joinCode;
-                _yourCode.style.display = DisplayStyle.Flex;
+                SetCodeLabel(joinCode);
                 _connected = true;
             }
             catch (Exception ex)
@@ -108,10 +121,11 @@ namespace UI
 
         private void UpdateButtons()
         {
+            _createOrJoin.style.display = !_connected ? DisplayStyle.Flex : DisplayStyle.None;
+            _waiting.style.display = _connected ? DisplayStyle.Flex : DisplayStyle.None;
             if (_connected)
             {
                 _startServer.style.display = DisplayStyle.None;
-                _connectContainer.style.display = DisplayStyle.None;
                 _message.style.display = DisplayStyle.None;
                 return;
             }

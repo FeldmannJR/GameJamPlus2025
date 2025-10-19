@@ -11,12 +11,14 @@ namespace DefaultNamespace
 {
     public class PlayerControls : NetworkBehaviour
     {
+        public bool Freeze = false;
         public Transform GhostObject;
 
 
         public static PlayerControls LocalPlayer;
         public bool Finished = false;
         public static event Action<PlayerControls> OnStarted;
+        public static event Action<PlayerControls> OnStopped;
         public float MoveSpeed = 1f;
         //private GeneratedInputActions _inputActions;
 
@@ -37,6 +39,10 @@ namespace DefaultNamespace
             RegisterControls();
         }
 
+        public override void OnStopClient()
+        {
+            OnStopped?.Invoke(this);
+        }
 
         private void RegisterControls()
         {
@@ -55,6 +61,7 @@ namespace DefaultNamespace
 
         private void FixedUpdate()
         {
+            if (Freeze) return;
             var position = this.transform.position;
 
             _rigidbody2D.MovePosition(position + _moveDirection.ToVector3() * Time.deltaTime * MoveSpeed);

@@ -21,7 +21,6 @@ namespace UI
         {
             if (obj.IsOwner)
             {
-                ShowGameplay(true);
             }
         }
 

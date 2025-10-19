@@ -4493,6 +4493,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Scripts::UI.ConnectUI
   _networkManager: {fileID: 7342881419119218090}
+  _levelSystem: {fileID: 1681872126}
 --- !u!114 &1149969007
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6044,6 +6045,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Scripts::DefaultNamespace.LevelSystem
   _players: []
   _gameEnd: {fileID: 670704188}
+  GameStarted: 0
 --- !u!1 &1684708666
 GameObject:
   m_ObjectHideFlags: 0
@@ -8568,14 +8570,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdee964473d743b1bc62fd8f82ca78f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Scripts::FishNet.Discovery.NetworkDiscovery
-  _networkManager: {fileID: 0}
-  secret: 23232
-  _secretBytes: []
-  port: 0
-  searchTimeout: 10
-  automatic: 1
-  <IsAdvertising>k__BackingField: 0
-  <IsSearching>k__BackingField: 0
 --- !u!114 &7342881419119218094
 MonoBehaviour:
   m_ObjectHideFlags: 0
