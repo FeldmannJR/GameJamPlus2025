@@ -15,7 +15,8 @@
     "Unity.Networking.Transport",
     "Adrenak.UniVoice.Runtime",
     "Adrenak.UniMic.Runtime",
-    "AYellowpaper.SerializedCollections"
+    "AYellowpaper.SerializedCollections",
+    "DOTween.Modules"
   ],
   "includePlatforms": [],
   "excludePlatforms": [],

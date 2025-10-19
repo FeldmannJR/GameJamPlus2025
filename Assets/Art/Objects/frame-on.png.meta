@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 63e6bac673ec5ca46a8a4e2052b75cac
+guid: f7f2365ad71191c408a41a1c52a7c2ea
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1177578112082225661
-    second: frame3_0
+      213: 8270346567994595480
+    second: Pixel-Art-PNG-Free-Download_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 350
+  spritePixelsToUnits: 2300
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: frame3_0
+      name: Pixel-Art-PNG-Free-Download_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 747
-        height: 1022
+        width: 490
+        height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: df9afe9cd09975010800000000000000
-      internalID: 1177578112082225661
+      spriteID: 89850baa26c26c270800000000000000
+      internalID: 8270346567994595480
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      frame3_0: 1177578112082225661
+      Pixel-Art-PNG-Free-Download_0: 8270346567994595480
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

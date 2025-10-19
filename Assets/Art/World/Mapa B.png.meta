@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 63e6bac673ec5ca46a8a4e2052b75cac
+guid: 9632665b46ed0a64dbbe7a06a2c8953f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1177578112082225661
-    second: frame3_0
+      213: -1488047393224442538
+    second: mapa c moveis casa 2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,12 +46,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 350
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: frame3_0
+      name: mapa c moveis casa 2_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 747
-        height: 1022
+        width: 5024
+        height: 5847
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: df9afe9cd09975010800000000000000
-      internalID: 1177578112082225661
+      spriteID: 65d39e5a7c4695be0800000000000000
+      internalID: -1488047393224442538
       vertices: []
       indices: 
       edges: []
@@ -151,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      frame3_0: 1177578112082225661
+      mapa c moveis casa 2_0: -1488047393224442538
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

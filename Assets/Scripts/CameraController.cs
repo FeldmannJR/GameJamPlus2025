@@ -9,9 +9,11 @@ namespace DefaultNamespace
         public PlayerControls _player;
         private bool _playerSet = false;
 
+        private float _startZ;
 
         private void Start()
         {
+            _startZ = this.transform.position.z;
             PlayerControls.OnStarted += OnSet;
             _level.OnPlayerFinish += OnPlayerFinish;
         }
@@ -52,7 +54,7 @@ namespace DefaultNamespace
             if (_playerSet)
             {
                 var pos = _player.transform.position;
-                pos.z = -10;
+                pos.z = _startZ;
                 this.transform.position = pos;
             }
         }
