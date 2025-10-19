@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Audio;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 
@@ -12,6 +13,10 @@ namespace Scripts
         private int _currentIndex = 0;
         private bool _failed = false;
 
+        [SerializeField] private GameAudioBehaviour _success;
+        [SerializeField] private GameAudioBehaviour _fail;
+
+
         private void Start()
         {
             foreach (var lever in _levers)
@@ -22,6 +27,15 @@ namespace Scripts
 
         private async UniTaskVoid OnFinishedCombination(bool failed)
         {
+            if (failed)
+            {
+                _fail?.PlayOneShot();
+            }
+            else
+            {
+                _success?.PlayOneShot();
+            }
+
             await UniTask.Delay(TimeSpan.FromSeconds(_delayAfterCombinationFinished));
             if (failed)
             {

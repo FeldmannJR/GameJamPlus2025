@@ -39,15 +39,17 @@ namespace Audio
 
         private CancellationTokenSource _cc;
 
+        private float _volume;
         public void Pause()
         {
+            _volume = _audioSource.volume;
             if (_cc != null)
             {
                 _cc.Cancel();
                 _cc = null;
             }
 
-            _audioSource.Pause();
+            _audioSource.volume = _audioSource.volume / 2;
         }
 
         public void Unpause()
@@ -55,7 +57,7 @@ namespace Audio
             _cc = new CancellationTokenSource();
             UniTask.Delay(4000, cancellationToken: _cc.Token).ContinueWith(() =>
             {
-                _audioSource.UnPause();
+                _audioSource.volume = _volume;
                 _cc = null;
             });
         }

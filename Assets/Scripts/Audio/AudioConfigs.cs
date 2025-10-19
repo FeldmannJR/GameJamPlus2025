@@ -22,6 +22,8 @@ namespace Audio
 
         GameTheme = 12,
         MainMenuTHeme = 13,
+        Success = 14,
+        Fail = 15
     }
 
     [Serializable]

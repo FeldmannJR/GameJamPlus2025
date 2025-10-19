@@ -13,9 +13,7 @@ public class AutomaticShowAfterSeconds : OpacityDownAnimation
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        var spr = GetComponent<SpriteRenderer>();
-        spr.color = Color.clear;
-
+   
         LevelSystem.Instance.OnGameStart += GameStarted;
     }
 
@@ -28,6 +26,7 @@ public class AutomaticShowAfterSeconds : OpacityDownAnimation
 
     private async UniTaskVoid AsyncStart()
     {
+        Debug.Log("Appear Component");
         var spr = GetComponent<SpriteRenderer>();
         spr.color = Color.clear;
         await UniTask.Delay(TimeSpan.FromSeconds(_showAfterSeconds), cancellationToken: _cc.Token);

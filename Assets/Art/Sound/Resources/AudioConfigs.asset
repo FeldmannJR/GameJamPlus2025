@@ -54,6 +54,14 @@ MonoBehaviour:
       Value:
         Clips:
         - {fileID: 8300000, guid: f9e6bedf98f738646b914f8e67ab5582, type: 3}
+    - Key: 14
+      Value:
+        Clips:
+        - {fileID: 8300000, guid: dba472bde0a78ae4f9f10e52331cd9ab, type: 3}
+    - Key: 15
+      Value:
+        Clips:
+        - {fileID: 8300000, guid: 055bb79a7a335864fbe0fae93782596a, type: 3}
     - Key: 9
       Value:
         Clips:

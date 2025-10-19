@@ -34,8 +34,10 @@ namespace Audio
             _audioBehaviour.PlayRepeating();
         }
 
+        private float musicVOlume;
         public void ContinueMusic()
         {
+            
             _audioBehaviour.Unpause();
         }
 

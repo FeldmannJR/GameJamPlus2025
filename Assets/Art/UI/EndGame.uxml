@@ -1,5 +1,6 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <ui:VisualElement name="Background" picking-mode="Ignore" style="flex-grow: 1; background-color: rgb(51, 51, 51); justify-content: center; align-items: center;">
-        <ui:Label text="GAME ENDED" name="Label" style="color: rgb(255, 255, 255); font-size: 71px;" />
+    <ui:VisualElement name="Background" picking-mode="Ignore" style="flex-grow: 1; background-color: rgb(51, 51, 51); justify-content: center; align-items: center; background-image: url(&quot;project://database/Assets/Art/UI/MENU%20FUNDO.png?fileID=2800000&amp;guid=853fc93c2d12a3144bf31f0c1fbb5dd2&amp;type=3#MENU FUNDO&quot;);">
+        <ui:Label text="Credits:&#10;Isa Fontanari &#10;Carlos Feldmann&#10;Giovana &quot;Iota&quot; Vargas&#10;Lavinia Nunes&#10;Christian Lucas &quot;Gnomo&quot;&#10;Camille Carvalho" parse-escape-sequences="true" style="position: absolute; top: 88px; left: 20px; font-size: 39px; color: rgb(207, 207, 207); height: 498px; width: 480px;" />
+        <ui:Label text="GAME ENDED" name="Label" style="color: rgb(207, 136, 208); font-size: 101px; position: absolute; top: 638px; left: 629px; height: 244px; width: 646px; -unity-text-align: middle-center;" />
     </ui:VisualElement>
 </ui:UXML>
